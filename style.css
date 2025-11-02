@@ -1,0 +1,76 @@
+/* 간단한 스타일 초기화 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 가운데 정렬용 컨테이너 */
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* 인원수 입력창 */
+#partySizeInput {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* 패딩이 너비를 넘어가지 않도록 설정 */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* 등록하기 버튼 */
+#registerButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* 파란색 계열 */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#registerButton:hover {
+    background-color: #0056b3;
+}
+
+/* 버튼 비활성화 시 */
+#registerButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* 상태 메시지 */
+#statusMessage {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
